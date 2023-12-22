@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+    height: 100vh;
+    background: #0F1757;
+    padding: 10px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 20px;
+}
+.navbar-menu{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.navbar-brand{
+font-weight: bold;
+font-size: 35px;
+}
+
+.navbar-item, .checkboxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-menu .navbar-item{
+    text-transform: uppercase;
+}
+
+.navbar-menu .navbar-item:hover{
+    color: red;
+    cursor: pointer;
+}
+.hero-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    height:95vh;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+}
+.hero-body .content{
+    display: flex;
+    font-size: 20px;
+}
+.hero-body .title{
+    font-size: 80px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.hero-body form{
+    display: flex;
+    gap: 15px;
+}
+.hero-body input[type="text"],
+.hero-body button,
+.hero-body select{
+    width: 12vw;
+    height: 5vh;
+}
+.hero-body input[type="text"],
+.hero-body select{
+    padding: 5px;
+    border-radius: 5px;
+    color:grey;
+    text-transform: capitalize;
+}
+.hero-body button{
+    background: #E41A2B;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+.checkbox{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.checkbox input{
+    width: 25px;
+    height: 25px;
+}
+.checkboxes{
+    gap: 25px;
+}
+.hero-body button{
+    transition: .2s;
+}
+.hero-body button:hover{
+    border: 1 px solid #E41A2B;
+    color:#E41A2B;
+    background: transparent;
+    cursor: pointer;
+}
+
+.checkbox:hover input[type="checkbox"]:hover{
+    cursor: pointer;
+    color: orangered;
+    background: #0F1757;
+}
+.technologies{
+    background: #E41A2B;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    height: 20vh;
+
+}
+.tech{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    gap: 10px;
+}
+.tech ion-icon{
+    font-size: 100px
+}
+.tech :hover{
+    background: #bd1624;
+    cursor: pointer;
+}
